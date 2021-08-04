@@ -81,12 +81,23 @@
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_2_0_RELEASE.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_25.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ec/repo/TourRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ec/repo/TourRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ec/domain/TourRating.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ec/domain/TourRating.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ec/domain/TourRatingPk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ec/domain/TourRatingPk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ec/repo/TourRatingRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ec/repo/TourRatingRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ec/web/TourRatingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ec/web/TourRatingController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -99,7 +110,9 @@
     </option>
   </component>
   <component name="ProjectId" id="1w92p5hDJws5PqkeChoxRjNGRIj" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -121,8 +134,20 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ExplorecaliApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="explorecali" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.ec.ExplorecaliApplication" />
@@ -146,7 +171,8 @@
       <workItem from="1627857819861" duration="2890000" />
       <workItem from="1627861088139" duration="634000" />
       <workItem from="1627937710589" duration="956000" />
-      <workItem from="1628020591441" duration="5566000" />
+      <workItem from="1628020591441" duration="6604000" />
+      <workItem from="1628111815202" duration="4449000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit අගෝස්තු">
       <created>1628028657175</created>
@@ -155,7 +181,21 @@
       <option name="project" value="LOCAL" />
       <updated>1628028657175</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="ADD : LIMIT ACCESS API [0002]">
+      <created>1628029668405</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1628029668405</updated>
+    </task>
+    <task id="LOCAL-00003" summary="ADD CONTROLLER : CUSTOMERS who went tours can add comments and rating with this, and the MVC based.">
+      <created>1628030015256</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1628030015256</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,21 +205,23 @@
     <MESSAGE value="Initial Commit 2021 අගෝස්තු  4 වැනි බදාදා 03:36 +0530" />
     <MESSAGE value="Initial Commit 2021අගෝස්තු4" />
     <MESSAGE value="Initial Commit අගෝස්තු" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit අගෝස්තු" />
+    <MESSAGE value="ADD : LIMIT ACCESS API [0002]" />
+    <MESSAGE value="ADD CONTROLLER : CUSTOMERS who went tours can add comments and rating with this, and the MVC based." />
+    <option name="LAST_COMMIT_MESSAGE" value="ADD CONTROLLER : CUSTOMERS who went tours can add comments and rating with this, and the MVC based." />
   </component>
   <component name="WindowStateProjectService">
     <state x="407" y="197" width="564" height="394" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1627857434403">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
     <state x="407" y="197" width="564" height="394" key="#com.intellij.fileTypes.FileTypeChooser/0.28.1366.740@0.28.1366.740" timestamp="1627857434403" />
-    <state x="491" y="103" width="374" height="585" key="#com.intellij.ide.util.MemberChooser" timestamp="1628029349743">
+    <state x="491" y="103" width="374" height="585" key="#com.intellij.ide.util.MemberChooser" timestamp="1628116468773">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
-    <state x="491" y="103" width="374" height="585" key="#com.intellij.ide.util.MemberChooser/0.28.1366.740@0.28.1366.740" timestamp="1628029349743" />
-    <state x="0" y="28" width="1356" height="736" key="CommitChangelistDialog2" timestamp="1628028656425">
+    <state x="491" y="103" width="374" height="585" key="#com.intellij.ide.util.MemberChooser/0.28.1366.740@0.28.1366.740" timestamp="1628116468773" />
+    <state x="0" y="28" width="1356" height="736" key="CommitChangelistDialog2" timestamp="1628030014930">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
-    <state x="0" y="28" width="1356" height="736" key="CommitChangelistDialog2/0.28.1366.740@0.28.1366.740" timestamp="1628028656425" />
+    <state x="0" y="28" width="1356" height="736" key="CommitChangelistDialog2/0.28.1366.740@0.28.1366.740" timestamp="1628030014930" />
     <state x="127" y="85" width="1092" height="618" key="DiffContextDialog" timestamp="1628028346896">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
@@ -236,10 +278,14 @@
       <screen x="0" y="28" width="1366" height="740" />
     </state>
     <state width="1318" height="447" key="GridCell.Tab.2.right/0.28.1366.740@0.28.1366.740" timestamp="1627860733616" />
-    <state x="278" y="134" width="800" height="524" key="Vcs.Push.Dialog.v2" timestamp="1628028699204">
+    <state x="278" y="134" width="800" height="524" key="Vcs.Push.Dialog.v2" timestamp="1628030020283">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
-    <state x="278" y="134" width="800" height="524" key="Vcs.Push.Dialog.v2/0.28.1366.740@0.28.1366.740" timestamp="1628028699204" />
+    <state x="278" y="134" width="800" height="524" key="Vcs.Push.Dialog.v2/0.28.1366.740@0.28.1366.740" timestamp="1628030020283" />
+    <state x="297" y="79" width="762" height="633" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1628116445606">
+      <screen x="0" y="28" width="1366" height="740" />
+    </state>
+    <state x="297" y="79" width="762" height="633" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.28.1366.740@0.28.1366.740" timestamp="1628116445606" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
