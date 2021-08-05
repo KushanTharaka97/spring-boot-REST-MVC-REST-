@@ -6,7 +6,7 @@ import java.util.Objects;
 /**
  * The Tour contains all attributes of an Explore California Tour.
  *
- * Created by Mary Ellen Bowman
+ * Created by Mary Ellen Bowman | Tutorial Followed By Kushan Tharaka | Tutorial Followed By Kushan Tharaka
  */
 @Entity
 public class Tour {

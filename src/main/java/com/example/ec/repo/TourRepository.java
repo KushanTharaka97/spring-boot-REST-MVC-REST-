@@ -13,7 +13,7 @@ import java.util.List;
 /**
  * Tour Repository Interface
  *
- * Created by Mary Ellen Bowman
+ * Created by Mary Ellen Bowman | Tutorial Followed By Kushan Tharaka
  * --Kushan I am following her course.
  */
 

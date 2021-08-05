@@ -8,7 +8,7 @@ import java.util.Optional;
 /**
  * Tour Package Repository Interface
  *
- * Created by Mary Ellen Bowman
+ * Created by Mary Ellen Bowman | Tutorial Followed By Kushan Tharaka
  */
 public interface TourPackageRepository extends CrudRepository<TourPackage, String> {
     Optional<TourPackage> findByName(String Name);

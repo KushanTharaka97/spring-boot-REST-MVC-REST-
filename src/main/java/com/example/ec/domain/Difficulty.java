@@ -7,7 +7,7 @@ package com.example.ec.domain;
 /**
  * Enumeration of the level of effort.
  *
- * Created by Mary Ellen Bowman
+ * Created by Mary Ellen Bowman | Tutorial Followed By Kushan Tharaka
  */
 public enum Difficulty {
     Easy, Medium, Difficult, Varies;

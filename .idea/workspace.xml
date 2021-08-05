@@ -80,10 +80,16 @@
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_2_0_RELEASE.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_2_0_RELEASE.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_25.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ec/web/RatingDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ec/domain/TourRating.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ec/domain/TourRating.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ec/domain/TourRatingPk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ec/domain/TourRatingPk.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ec/repo/TourRatingRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ec/repo/TourRatingRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ec/domain/Difficulty.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ec/domain/Difficulty.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ec/domain/Region.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ec/domain/Region.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ec/domain/Tour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ec/domain/Tour.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ec/domain/TourPackage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ec/domain/TourPackage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ec/repo/TourPackageRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ec/repo/TourPackageRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ec/repo/TourRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ec/repo/TourRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ec/service/TourPackageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ec/service/TourPackageService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ec/service/TourService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ec/service/TourService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ec/web/TourRatingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ec/web/TourRatingController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -118,6 +124,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
@@ -137,13 +144,15 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -173,6 +182,8 @@
       <workItem from="1627937710589" duration="956000" />
       <workItem from="1628020591441" duration="6604000" />
       <workItem from="1628111815202" duration="4449000" />
+      <workItem from="1628119454143" duration="1619000" />
+      <workItem from="1628196248255" duration="4319000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit අගෝස්තු">
       <created>1628028657175</created>
@@ -195,33 +206,42 @@
       <option name="project" value="LOCAL" />
       <updated>1628030015256</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added New JPA functions.">
+      <created>1628119576551</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1628119576551</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Initial Commit 2021 අගෝස්තු  4 වැනි බදාදා 03:36 +0530" />
     <MESSAGE value="Initial Commit 2021අගෝස්තු4" />
     <MESSAGE value="Initial Commit අගෝස්තු" />
     <MESSAGE value="ADD : LIMIT ACCESS API [0002]" />
     <MESSAGE value="ADD CONTROLLER : CUSTOMERS who went tours can add comments and rating with this, and the MVC based." />
-    <option name="LAST_COMMIT_MESSAGE" value="ADD CONTROLLER : CUSTOMERS who went tours can add comments and rating with this, and the MVC based." />
+    <MESSAGE value="Added New JPA functions." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added New JPA functions." />
   </component>
   <component name="WindowStateProjectService">
     <state x="407" y="197" width="564" height="394" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1627857434403">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
     <state x="407" y="197" width="564" height="394" key="#com.intellij.fileTypes.FileTypeChooser/0.28.1366.740@0.28.1366.740" timestamp="1627857434403" />
-    <state x="491" y="103" width="374" height="585" key="#com.intellij.ide.util.MemberChooser" timestamp="1628116468773">
+    <state x="491" y="103" width="374" height="585" key="#com.intellij.ide.util.MemberChooser" timestamp="1628201364637">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
-    <state x="491" y="103" width="374" height="585" key="#com.intellij.ide.util.MemberChooser/0.28.1366.740@0.28.1366.740" timestamp="1628116468773" />
-    <state x="0" y="28" width="1356" height="736" key="CommitChangelistDialog2" timestamp="1628030014930">
+    <state x="491" y="103" width="374" height="585" key="#com.intellij.ide.util.MemberChooser/0.28.1366.740@0.28.1366.740" timestamp="1628201364637" />
+    <state x="0" y="28" width="1356" height="736" key="CommitChangelistDialog2" timestamp="1628119575500">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
-    <state x="0" y="28" width="1356" height="736" key="CommitChangelistDialog2/0.28.1366.740@0.28.1366.740" timestamp="1628030014930" />
+    <state x="0" y="28" width="1356" height="736" key="CommitChangelistDialog2/0.28.1366.740@0.28.1366.740" timestamp="1628119575500" />
     <state x="127" y="85" width="1092" height="618" key="DiffContextDialog" timestamp="1628028346896">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
@@ -286,21 +306,9 @@
       <screen x="0" y="28" width="1366" height="740" />
     </state>
     <state x="297" y="79" width="762" height="633" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.28.1366.740@0.28.1366.740" timestamp="1628116445606" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/ec/ExplorecaliApplication.java</url>
-          <line>37</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/ec/ExplorecaliApplication.java</url>
-          <line>41</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="606" y="100" width="607" height="622" key="find.popup" timestamp="1628196975868">
+      <screen x="0" y="28" width="1366" height="740" />
+    </state>
+    <state x="606" y="100" width="607" height="622" key="find.popup/0.28.1366.740@0.28.1366.740" timestamp="1628196975868" />
   </component>
 </project>

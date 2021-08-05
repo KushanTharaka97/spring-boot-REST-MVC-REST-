@@ -8,7 +8,8 @@ import org.springframework.stereotype.Service;
 /**
  * Tour Package Service
  *
- * Created by Mary Ellen Bowman
+ * Created by Mary Ellen Bowman | Tutorial Followed By Kushan Tharaka
+ *
  */
 @Service
 public class TourPackageService {
