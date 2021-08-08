@@ -14,4 +14,34 @@ public class TourRating {
 
     @Column
     private String comment;
+
+    public TourRating(TourRatingPk pk, Integer score, String comment) {
+        this.pk = pk;
+        this.score = score;
+        this.comment = comment;
+    }
+
+    public TourRatingPk getPk() {
+        return pk;
+    }
+
+    public void setPk(TourRatingPk pk) {
+        this.pk = pk;
+    }
+
+    public Integer getScore() {
+        return score;
+    }
+
+    public void setScore(Integer score) {
+        this.score = score;
+    }
+
+    public String getComment() {
+        return comment;
+    }
+
+    public void setComment(String comment) {
+        this.comment = comment;
+    }
 }

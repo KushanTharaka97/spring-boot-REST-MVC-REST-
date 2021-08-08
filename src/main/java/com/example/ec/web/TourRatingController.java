@@ -37,7 +37,8 @@ public class TourRatingController {
 
     public void createTourRating(int tourId, RatingDTO ratingDTO){
          Tour tour = verifyTour(tourId);
-         tourRatingRepository.save(new TourRating(new TourRatingPk(tour,ratingDTO.getComment(), ratingDTO.getScore(), ratingDTO.getCustomerId())));
+//         tourRatingRepository.save(new TourRating(new TourRatingPk(tour,ratingDTO.getComment(), ratingDTO.getCustomerId(), ratingDTO)));
+    tourRatingRepository.save(new TourRating(new TourRatingPk(tour, ratingDTO.getCustomerId()), ratingDTO.getScore(), ratingDTO.getComment()));
     }
     /**
      * Verify and return the Tour given a tourId.
