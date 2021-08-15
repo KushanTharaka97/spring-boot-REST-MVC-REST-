@@ -5,7 +5,10 @@ import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
 
 @Entity
-public class TourRating {
+public class TourRating{
+    public TourRating() {
+    }
+
     @EmbeddedId
     private TourRatingPk pk;
 

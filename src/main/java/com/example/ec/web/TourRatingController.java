@@ -7,10 +7,8 @@ import com.example.ec.repo.TourRatingRepository;
 import com.example.ec.repo.TourRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
-import org.springframework.web.bind.annotation.ExceptionHandler;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseStatus;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.NoSuchElementException;
 
@@ -35,9 +33,12 @@ public class TourRatingController {
 
     }
 
-    public void createTourRating(int tourId, RatingDTO ratingDTO){
-         Tour tour = verifyTour(tourId);
-//         tourRatingRepository.save(new TourRating(new TourRatingPk(tour,ratingDTO.getComment(), ratingDTO.getCustomerId(), ratingDTO)));
+    @PostMapping
+    @ResponseStatus(HttpStatus.CREATED)
+    public void createTourRating(@PathVariable(value = "tourId") int tourId,
+                                 @RequestBody @Validated RatingDTO ratingDTO){
+        Tour tour = verifyTour(tourId);
+
     tourRatingRepository.save(new TourRating(new TourRatingPk(tour, ratingDTO.getCustomerId()), ratingDTO.getScore(), ratingDTO.getComment()));
     }
     /**
@@ -47,6 +48,8 @@ public class TourRatingController {
      * @return the found Tour
      * @throws NoSuchElementException if no Tour found.
      */
+
+
     private Tour verifyTour(int tourId) throws NoSuchElementException {
         return tourRepository.findById(tourId).orElseThrow(() ->
             new NoSuchElementException("Tour does not exist " + tourId));

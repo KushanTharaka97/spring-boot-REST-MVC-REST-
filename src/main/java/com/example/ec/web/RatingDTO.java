@@ -19,6 +19,16 @@ public class RatingDTO {
 
     //JAVA WILL DO THE VALIDATION
 
+
+    public RatingDTO() {
+    }
+
+    public RatingDTO(@Min(0) @Max(5) Integer score, @Size(max = 255) String comment, @NotNull Integer customerId) {
+        this.score = score;
+        this.comment = comment;
+        this.customerId = customerId;
+    }
+
     public Integer getScore() {
         return score;
     }
