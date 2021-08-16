@@ -55,7 +55,11 @@ public class TourRatingController {
     //average
     public Map<String, Double> getAverage(int tourId){
         verifyTour(tourId);
-        return Map.of("Average", tourRatingRepository.findByPkTourId(tourId).stream().mapToInt(TourRating::getScore).average().orElseThrow(()-> new NoSuchElementException("Tour Has No Rating")));
+        return Map.of("Average", tourRatingRepository
+                .findByPkTourId(tourId)
+                .stream().mapToInt(TourRating::getScore)
+                .average()
+                .orElseThrow(()-> new NoSuchElementException("Tour Has No Rating")));
     }
     /**
      * Verify and return the Tour given a tourId.

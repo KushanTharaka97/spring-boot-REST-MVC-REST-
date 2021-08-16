@@ -81,7 +81,6 @@
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_2_0_RELEASE.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_25.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ec/web/RatingDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ec/web/RatingDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ec/web/TourRatingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ec/web/TourRatingController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -142,7 +141,7 @@
       <workItem from="1629061217331" duration="1428000" />
       <workItem from="1629145199653" duration="2000" />
       <workItem from="1629145323512" duration="1637000" />
-      <workItem from="1629148724744" duration="2480000" />
+      <workItem from="1629148724744" duration="2545000" />
     </task>
     <task id="LOCAL-00001" summary="BUG FIXED ERROR WAS IN THE REPOSITORY.">
       <created>1629063193652</created>
@@ -151,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629063193652</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="BUG FIXED ERROR WAS IN THE REPOSITORY.">
+      <created>1629151305783</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1629151305783</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,10 +168,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="BUG FIXED ERROR WAS IN THE REPOSITORY." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="0" y="28" width="1356" height="736" key="CommitChangelistDialog2" timestamp="1629063189276">
+    <state x="0" y="28" width="1356" height="736" key="CommitChangelistDialog2" timestamp="1629151303410">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
-    <state x="0" y="28" width="1356" height="736" key="CommitChangelistDialog2/0.28.1366.740@0.28.1366.740" timestamp="1629063189276" />
+    <state x="0" y="28" width="1356" height="736" key="CommitChangelistDialog2/0.28.1366.740@0.28.1366.740" timestamp="1629151303410" />
     <state width="1318" height="310" key="GridCell.Tab.0.bottom" timestamp="1629147790021">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
