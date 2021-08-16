@@ -10,7 +10,10 @@ import org.springframework.http.HttpStatus;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+import java.util.Map;
 import java.util.NoSuchElementException;
+import java.util.stream.Collectors;
 
 /**
  * Tour Rating Controller
@@ -40,6 +43,19 @@ public class TourRatingController {
         Tour tour = verifyTour(tourId);
 
     tourRatingRepository.save(new TourRating(new TourRatingPk(tour, ratingDTO.getCustomerId()), ratingDTO.getScore(), ratingDTO.getComment()));
+    }
+
+
+    //getAll the ratings for the Tour
+    public List<RatingDTO> getAllRatingsForTour(int tourId){
+        verifyTour(tourId);
+        return tourRatingRepository.findByPkTourId(tourId).stream().map(RatingDTO::new).collect(Collectors.toList());
+    }
+
+    //average
+    public Map<String, Double> getAverage(int tourId){
+        verifyTour(tourId);
+        return Map.of("Average", tourRatingRepository.findByPkTourId(tourId).stream().mapToInt(TourRating::getScore).average().orElseThrow(()-> new NoSuchElementException("Tour Has No Rating")));
     }
     /**
      * Verify and return the Tour given a tourId.
