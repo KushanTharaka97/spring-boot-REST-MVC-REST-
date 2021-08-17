@@ -47,13 +47,15 @@ public class TourRatingController {
 
 
     //getAll the ratings for the Tour
-    public List<RatingDTO> getAllRatingsForTour(int tourId){
+    @GetMapping
+    public List<RatingDTO> getAllRatingsForTour(@PathVariable(value = "tourId") int tourId){
         verifyTour(tourId);
         return tourRatingRepository.findByPkTourId(tourId).stream().map(RatingDTO::new).collect(Collectors.toList());
     }
 
     //average
-    public Map<String, Double> getAverage(int tourId){
+    @GetMapping(path = "/average")
+    public Map<String, Double> getAverage(@PathVariable(value = "tourId")int tourId){
         verifyTour(tourId);
         return Map.of("Average", tourRatingRepository
                 .findByPkTourId(tourId)
