@@ -15,6 +15,9 @@ import java.util.Optional;
 public interface TourRatingRepository extends CrudRepository<TourRating, TourRatingPk> {
 //        List<TourRating> findByTourRating(TourRatingPk tourRatingPk);
     List<TourRating> findByPkTourId(Integer tourId);
+    //newly added that PkTourId and the PkCustomer
+    Optional<TourRating> findByPkTourIdAndPkCustomerId(Integer tourId, Integer customerId);
 
 //        Optional<Tour> findByPkTourIdAndPkCustomerId(TourRatingPk tourRatingPk);
 }
+

@@ -63,6 +63,15 @@ public class TourRatingController {
                 .average()
                 .orElseThrow(()-> new NoSuchElementException("Tour Has No Rating")));
     }
+
+    //PUT PATCH DELETE method have to implement here
+    //PUT : UpdateWithPut PATCH:updateWithPatch DELETE: delete the rating
+
+    private TourRating verifyTourRating(int tourId, int customerId) throws NoSuchElementException{
+        return tourRatingRepository.findByPkTourIdAndPkCustomerId(tourId,customerId).orElseThrow(()->
+                new NoSuchElementException("Tour Does not exist "+tourId));
+//        return null;
+    }
     /**
      * Verify and return the Tour given a tourId.
      *
