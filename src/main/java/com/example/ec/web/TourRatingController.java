@@ -67,10 +67,43 @@ public class TourRatingController {
     //PUT PATCH DELETE method have to implement here
     //PUT : UpdateWithPut PATCH:updateWithPatch DELETE: delete the rating
 
+    //PUT method implementing 2021-08-20
+        @PutMapping
+        public RatingDTO updateWithPut(@PathVariable(value = "tourId")int tourId,
+                                       @RequestBody @Validated RatingDTO ratingDTO){
+            TourRating rating = verifyTourRating(tourId, ratingDTO.getCustomerId());
+            rating.setScore(ratingDTO.getScore());
+            rating.setComment(ratingDTO.getComment());
+            return new RatingDTO(tourRatingRepository.save(rating));
+        }
+
+        //PATCH method implementing 2021-08-20
+        @PatchMapping
+        public RatingDTO updateWithPatch(@PathVariable(value = "tourId")int tourId,
+                                         @RequestBody @Validated RatingDTO ratingDTO){
+            TourRating rating = verifyTourRating(tourId, ratingDTO.getCustomerId());
+                if(rating.getComment()!=null){
+                    rating.setComment(ratingDTO.getComment());
+                }
+                if(rating.getScore()!=null){
+                    rating.setScore(rating.getScore());
+                }
+
+            return new RatingDTO(tourRatingRepository.save(rating));
+        }
+
+
+        //DELETED
+    @DeleteMapping(path = "/{customerId}")
+    public void delete (@PathVariable(value = "tourId")int tourId,
+                        @PathVariable(value = "customerId") int customerId){
+        TourRating rating = verifyTourRating(tourId,customerId);
+        tourRatingRepository.delete(rating);
+    }
     private TourRating verifyTourRating(int tourId, int customerId) throws NoSuchElementException{
         return tourRatingRepository.findByPkTourIdAndPkCustomerId(tourId,customerId).orElseThrow(()->
                 new NoSuchElementException("Tour Does not exist "+tourId));
-//        return null;
+
     }
     /**
      * Verify and return the Tour given a tourId.
